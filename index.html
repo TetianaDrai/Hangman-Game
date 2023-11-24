@@ -1,72 +1,34 @@
 <html lang="en"><head>
-    <meta charset="UTF-8">
-    <title>Hangman Game</title>
-  <link rel="stylesheet" href="hangman.css"></head>
-  <script src="hangman.js"></script>
-  <body onload="startGame()">
+  <meta charset="UTF-8">
+  <title>Hangman Game</title>
+<link rel="stylesheet" href="hangman.css"></head>
+<script src="hangman.js"></script>
+<head>
+  <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+</head>
+<body onload="startGame()">
+  <h1>Hangman Game</h1>     
+   <div class="hangman">
+      <div class="hangmanBox">
+        <img src="images/hangman-0.svg" alt="img-hangman">
+      </div>
+    </div>
+    <div class="inputField">
+      <ul class="inputWord">
+        <li class="inputLetter"></li>
+        <li class="inputLetter"></li>
+        <li class="inputLetter"></li>
+        <li class="inputLetter"></li>
+        <li class="inputLetter"></li>
+      </ul>
+    </div>
+    <div>
+    <div class="alphabet" id="button">
+    </div>
+  </div>
+  <h3 class="lives">Attempts used: 
+    <b>0 / 6</b>
+  </h3>
     
-    <h1>Hangman Game</h1>     
-  
-     <div class="hangman">
-      <!-- <div class="hangman-results"> -->
-        <div class="hangman-box">
-          <img src="images/hangman-0.svg" alt="img-hangman">
-        </div>
-        <div class="game-over" style="display: none;">
-          <p class="game-over-won">You won!</p>
-          <p class="game-over-lost">Sorry, you lost</p>
-          <button id="game-over-replay">New Game</button>
-        </div>
-      </div>
-      <div class="input-field">
-        <ul class="input-word">
-          <li class="input-letter"></li>
-          <li class="input-letter"></li>
-          <li class="input-letter"></li>
-          <li class="input-letter"></li>
-          <li class="input-letter"></li>
-        </ul>
-      </div>
-      <div class="alphabet" id="alphabet">
-        <div class="alphabet-row">
-            <button class="letter">Q</button>
-            <button class="letter">W</button>
-            <button class="letter">E</button>
-            <button class="letter">R</button>
-            <button class="letter">T</button>
-            <button class="letter">Y</button>
-            <button class="letter">U</button>
-            <button class="letter">I</button>
-            <button class="letter">O</button>
-            <button class="letter">P</button>
-        </div>
-        <div class="alphabet-row">
-            <button class="letter">A</button>
-            <button class="letter">S</button>
-            <button class="letter">D</button>
-            <button class="letter">F</button>
-            <button class="letter">G</button>
-            <button class="letter">H</button>
-            <button class="letter">J</button>
-            <button class="letter">K</button>
-            <button class="letter">L</button>
-        </div>
-        <div class="alphabet-row">
-            <button class="letter">Z</button>
-            <button class="letter">X</button>
-            <button class="letter">C</button>
-            <button class="letter">V</button>
-            <button class="letter">B</button>
-            <button class="letter">N</button>
-            <button class="letter">M</button>
-        </div>
-    </div>
-    <h3 class="lives">Lives: 
-      <b>0 / 6</b>
-    </h3>
-      </div>
-    </div>
-  
-       
-    </body>
-  </html>
+  </body>
+</html>

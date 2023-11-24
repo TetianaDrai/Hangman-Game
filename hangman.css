@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic,latin);
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+    background-size: 20px 20px;
+    background-position: center center;
+  }
+
+
+.hangman {
+  padding: 20px 20px;
+  gap: 70px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 5px;
+  font-family: 'Bad Script', cursive;
+  color: #0000CD;
+}
+
+.hangmanBox img {
+max-width: 200px;
+}
+
+.hangmanBox {
+  max-width: 400px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.inputField {
+  display: inline-block;
+  max-width: 400px;
+  font-size: 2rem;
+  color: #0000CD	;
+  font-family: 'Bad Script';
+  align-items: center;
+  margin-top: 10px;
+}
+
+.inputWord {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-self: stretch;
+}
+.inputLetter {
+  border-bottom: 3px solid #000;
+  width: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: solid 500;
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 20px;
+}
+
+.lives b {
+  color: red;
+  font-size: 1.5rem;
+} 
+
+.alphabet { 
+  max-width: 300px; 
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  width: 30px;
+  padding: 6px;
+  color: black;
+  background-color: #6495ED;
+  margin: 1px 1px 0 0;
+}
+
+button [disabled] {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
